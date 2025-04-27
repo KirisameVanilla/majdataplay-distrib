@@ -15,7 +15,7 @@ export default {
       });
     }
 
-    pathname = pathname.slice( 1 ); // 去掉最前面的 /
+    pathname = decodeURIComponent(pathname.slice( 1 )); // 去掉最前面的 /
     const forceRefresh = url.searchParams.get('refresh') === '1';
 
     const cache = caches.default;
