@@ -9,3 +9,8 @@ bucket = "./src/files"
 [[r2_buckets]]
 binding = "MAJDATA_BUCKET"
 bucket_name = "majdataplay-distrib"
+
+# wrangler.toml (wrangler v3.88.0^)
+[observability.logs]
+enabled = true
+
