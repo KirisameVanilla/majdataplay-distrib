@@ -1,0 +1,606 @@
+{
+  "Code": "ja-JP",
+  "Author": "Majdata",
+  "MappingTable": [
+    {
+      "Origin": "Missing MSVC",
+      "Content": "Missing MSVC"
+    },
+    {
+      "Origin": "Missing MSVC CONTENT",
+      "Content": "MSVCライブラリ見つかりませんでした\nOKをクリックするとダウンロードページへ行きます"
+    },
+    {
+      "Origin": "Scanning Charts",
+      "Content": "Scanning Charts"
+    },
+    {
+      "Origin": "Scan Chart Failed",
+      "Content": "譜面スキャンエラー"
+    },
+    {
+      "Origin": "No Charts",
+      "Content": "譜面がない"
+    },
+    {
+      "Origin": "Press Any Key",
+      "Content": "TOUCH TO START"
+    },
+    {
+      "Origin": "Downloading",
+      "Content": "ダウンロード中"
+    },
+    {
+      "Origin": "Failed to download chart",
+      "Content": "Failed to download chart"
+    },
+    {
+      "Origin": "Unknown error",
+      "Content": "Unknown error"
+    },
+    {
+      "Origin": "Failed to load chart",
+      "Content": "譜面読み込みエラー"
+    },
+    {
+      "Origin": "Deserialization",
+      "Content": "譜面ロード中"
+    },
+    {
+      "Origin": "Loading Chart",
+      "Content": "譜面読み込む中"
+    },
+    {
+      "Origin": "Game_MAJSETTING_SCENE_TITLE",
+      "Content": "ゲーム設定"
+    },
+    {
+      "Origin": "Judge_MAJSETTING_SCENE_TITLE",
+      "Content": "判定設定"
+    },
+    {
+      "Origin": "Display_MAJSETTING_SCENE_TITLE",
+      "Content": "表示設定"
+    },
+    {
+      "Origin": "Audio_MAJSETTING_SCENE_TITLE",
+      "Content": "サウンド設定"
+    },
+    {
+      "Origin": "Volume_MAJSETTING_SCENE_TITLE",
+      "Content": "サウンド設定"
+    },
+    {
+      "Origin": "Debug_MAJSETTING_SCENE_TITLE",
+      "Content": "デバッグ"
+    },
+    {
+      "Origin": "TapSpeed_MAJSETTING_TITLE",
+      "Content": "タップスビート"
+    },
+    {
+      "Origin": "TapSpeed_MAJSETTING_DESC",
+      "Content": "タップの速さを設定"
+    },
+    {
+      "Origin": "TouchSpeed_MAJSETTING_TITLE",
+      "Content": "タッチスビート"
+    },
+    {
+      "Origin": "TouchSpeed_MAJSETTING_DESC",
+      "Content": "タッチの速さを設定"
+    },
+    {
+      "Origin": "SlideFadeInOffset_MAJSETTING_TITLE",
+      "Content": "スライド表示タイミング"
+    },
+    {
+      "Origin": "SlideFadeInOffset_MAJSETTING_DESC",
+      "Content": "スライド現れるタイミングを設定、右調整は遅い（秒）"
+    },
+    {
+      "Origin": "BackgroundDim_MAJSETTING_TITLE",
+      "Content": "背景の明るさ"
+    },
+    {
+      "Origin": "BackgroundDim_MAJSETTING_DESC",
+      "Content": "大きいの方が暗い"
+    },
+    {
+      "Origin": "Language_MAJSETTING_TITLE",
+      "Content": "言語"
+    },
+    {
+      "Origin": "Language_MAJSETTING_DESC",
+      "Content": "语言/LANGUAGE"
+    },
+    {
+      "Origin": "StarRotation_MAJSETTING_TITLE",
+      "Content": "スライドローテーション"
+    },
+    {
+      "Origin": "StarRotation_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "BGInfo_MAJSETTING_TITLE",
+      "Content": "画面中央表示"
+    },
+    {
+      "Origin": "BGInfo_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "AudioOffset_MAJSETTING_TITLE",
+      "Content": "判定調整A（音）"
+    },
+    {
+      "Origin": "AudioOffset_MAJSETTING_DESC",
+      "Content": "FAST = -\nLATE = +\n(秒)"
+    },
+    {
+      "Origin": "JudgeOffset_MAJSETTING_TITLE",
+      "Content": "判定調整B（視）"
+    },
+    {
+      "Origin": "JudgeOffset_MAJSETTING_DESC",
+      "Content": "FAST = -\nLATE = +\n(秒)"
+    },
+    {
+      "Origin": "Mode_MAJSETTING_TITLE",
+      "Content": "判定モード"
+    },
+    {
+      "Origin": "Mode_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "Skin_MAJSETTING_TITLE",
+      "Content": "スキン"
+    },
+    {
+      "Origin": "Skin_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "DisplayCriticalPerfect_MAJSETTING_TITLE",
+      "Content": "Critical判定"
+    },
+    {
+      "Origin": "DisplayCriticalPerfect_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "DisplayBreakScore_MAJSETTING_TITLE",
+      "Content": "DisplayBreakScore"
+    },
+    {
+      "Origin": "DisplayBreakScore_MAJSETTING_DESC",
+      "Content": "DisplayBreakScore_MAJSETTING_DESC"
+    },
+    {
+      "Origin": "FastLateType_MAJSETTING_TITLE",
+      "Content": "Fast/Late種類"
+    },
+    {
+      "Origin": "FastLateType_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "NoteJudgeType_MAJSETTING_TITLE",
+      "Content": "Note判定ディスプレイ種類"
+    },
+    {
+      "Origin": "NoteJudgeType_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "TouchJudgeType_MAJSETTING_TITLE",
+      "Content": "Touch判定ディスプレイ種類"
+    },
+    {
+      "Origin": "TouchJudgeType_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "SlideJudgeType_MAJSETTING_TITLE",
+      "Content": "Slide判定ディスプレイ種類"
+    },
+    {
+      "Origin": "SlideJudgeType_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "BreakJudgeType_MAJSETTING_TITLE",
+      "Content": "Break判定ディスプレイ種類"
+    },
+    {
+      "Origin": "BreakJudgeType_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "BreakFastLateType_MAJSETTING_TITLE",
+      "Content": "Break Fast/Late ディスプレイ種類"
+    },
+    {
+      "Origin": "BreakFastLateType_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "SlideSortOrder_MAJSETTING_TITLE",
+      "Content": "スライド表示順番"
+    },
+    {
+      "Origin": "SlideSortOrder_MAJSETTING_DESC",
+      "Content": "Classic: 新しいのは古いの上に\nModern: 古いのは新しいの上に"
+    },
+    {
+      "Origin": "InnerJudgeDistance_MAJSETTING_TITLE",
+      "Content": "内側判定文字表示距離"
+    },
+    {
+      "Origin": "InnerJudgeDistance_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "OuterJudgeDistance_MAJSETTING_TITLE",
+      "Content": "外側判定文字表示距離"
+    },
+    {
+      "Origin": "OuterJudgeDistance_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "Resolution_MAJSETTING_TITLE",
+      "Content": "解像度"
+    },
+    {
+      "Origin": "Resolution_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "Answer_MAJSETTING_TITLE",
+      "Content": "正解音"
+    },
+    {
+      "Origin": "Answer_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "BGM_MAJSETTING_TITLE",
+      "Content": "音楽"
+    },
+    {
+      "Origin": "BGM_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "Tap_MAJSETTING_TITLE",
+      "Content": "Tap/Hold判定音"
+    },
+    {
+      "Origin": "Tap_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "Slide_MAJSETTING_TITLE",
+      "Content": "Slide判定音"
+    },
+    {
+      "Origin": "Slide_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "Break_MAJSETTING_TITLE",
+      "Content": "Break判定音"
+    },
+    {
+      "Origin": "Break_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "Touch_MAJSETTING_TITLE",
+      "Content": "Touch判定音"
+    },
+    {
+      "Origin": "Touch_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "Voice_MAJSETTING_TITLE",
+      "Content": "ボイス"
+    },
+    {
+      "Origin": "Voice_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "DisplaySensor_MAJSETTING_TITLE",
+      "Content": "センサーディスプレイ"
+    },
+    {
+      "Origin": "DisplaySensor_MAJSETTING_DESC",
+      "Content": "センサーの状況を表示します"
+    },
+    {
+      "Origin": "DisplayFPS_MAJSETTING_TITLE",
+      "Content": "FPSディスプレイ"
+    },
+    {
+      "Origin": "DisplayFPS_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "FullScreen_MAJSETTING_TITLE",
+      "Content": "フルスクリーン"
+    },
+    {
+      "Origin": "FullScreen_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "TryFixAudioSync_MAJSETTING_TITLE",
+      "Content": "音ラッグを直す"
+    },
+    {
+      "Origin": "TryFixAudioSync_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "NoteAppearRate_MAJSETTING_TITLE",
+      "Content": "Noteフェードイン"
+    },
+    {
+      "Origin": "NoteAppearRate_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "DisableGCInGameing_MAJSETTING_TITLE",
+      "Content": "GCをオフする"
+    },
+    {
+      "Origin": "DisableGCInGameing_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "All",
+      "Content": "全部"
+    },
+    {
+      "Origin": "BelowCP",
+      "Content": "Critical以下"
+    },
+    {
+      "Origin": "BelowP",
+      "Content": "Perfect以下"
+    },
+    {
+      "Origin": "BelowGR",
+      "Content": "Great以下"
+    },
+    {
+      "Origin": "MissOnly",
+      "Content": "Missだけ"
+    },
+    {
+      "Origin": "Enable",
+      "Content": "有効"
+    },
+    {
+      "Origin": "Disable",
+      "Content": "無効"
+    },
+    {
+      "Origin": "True",
+      "Content": "有効"
+    },
+    {
+      "Origin": "False",
+      "Content": "無効"
+    },
+    {
+      "Origin": "Unavailable",
+      "Content": "利用不可"
+    },
+    {
+      "Origin": "Downloading Audio Track",
+      "Content": "トラックをダウンロード中"
+    },
+    {
+      "Origin": "Downloading Maidata",
+      "Content": "譜面をダウンロード中"
+    },
+    {
+      "Origin": "Downloading Picture",
+      "Content": "背景をダウンロード中"
+    },
+    {
+      "Origin": "Downloading Video",
+      "Content": "動画をダウンロード中"
+    },
+    {
+      "Origin": "Search",
+      "Content": "検索"
+    },
+    {
+      "Origin": "UseKeyboardHint",
+      "Content": "鍵盤を使ってください..."
+    },
+    {
+      "Origin": "Sort",
+      "Content": "順番"
+    },
+    {
+      "Origin": "SortbyTime",
+      "Content": "時間"
+    },
+    {
+      "Origin": "SortbyDiff",
+      "Content": "難易\n度順"
+    },
+    {
+      "Origin": "SortbyDes",
+      "Content": "譜面\n作者"
+    },
+    {
+      "Origin": "SortbyTitle",
+      "Content": "タイ\nトル"
+    },
+    {
+      "Origin": "SortbyDefault",
+      "Content": "デフォルト"
+    },
+    {
+      "Origin": "PlaybackSpeed_MAJSETTING_TITLE",
+      "Content": "再生スピード"
+    },
+    {
+      "Origin": "PlaybackSpeed_MAJSETTING_DESC",
+      "Content": "譜面再生のスピードを調整"
+    },
+    {
+      "Origin": "AllBreak_MAJSETTING_TITLE",
+      "Content": "全Break"
+    },
+    {
+      "Origin": "AllBreak_MAJSETTING_DESC",
+      "Content": "全てのNoteがBreakになる"
+    },
+    {
+      "Origin": "AllEx_MAJSETTING_TITLE",
+      "Content": "全Ex"
+    },
+    {
+      "Origin": "AllEx_MAJSETTING_DESC",
+      "Content": "全てのNoteがExになる"
+    },
+    {
+      "Origin": "AllTouch_MAJSETTING_TITLE",
+      "Content": "全Touch"
+    },
+    {
+      "Origin": "AllTouch_MAJSETTING_DESC",
+      "Content": "全てのNoteがTouchになる"
+    },
+    {
+      "Origin": "AutoPlay_MAJSETTING_TITLE",
+      "Content": "自動遊ぶ"
+    },
+    {
+      "Origin": "AutoPlay_MAJSETTING_DESC",
+      "Content": "オートプレイのこと"
+    },
+    {
+      "Origin": "JudgeStyle_MAJSETTING_TITLE",
+      "Content": "判定モード"
+    },
+    {
+      "Origin": "JudgeStyle_MAJSETTING_DESC",
+      "Content": "判定の厳しさを調整"
+    },
+    {
+      "Origin": "PracticeCount",
+      "Content": "回数"
+    },
+    {
+      "Origin": "Global_MAJSETTING_TITLE",
+      "Content": "グローバル"
+    },
+    {
+      "Origin": "Global_MAJSETTING_DESC",
+      "Content": "グローバルボリュームの制御"
+    },
+    {
+      "Origin": "Empty Chart",
+      "Content": "この難易度は存在しません"
+    },
+    {
+      "Origin": "THUMBUP_INFO",
+      "Content": "<面白かったらいいねしよ"
+    },
+    {
+      "Origin": "THUMBUP_SENDING",
+      "Content": "..."
+    },
+    {
+      "Origin": "THUMBUP_SENDED",
+      "Content": "いいねしました"
+    },
+    {
+      "Origin": "THUMBUP_ALREADY",
+      "Content": "すでにいいねしました"
+    },
+    {
+      "Origin": "THUMBUP_FAILED",
+      "Content": "いいね失敗した"
+    },
+    {
+      "Origin": "SCORE_SENDING",
+      "Content": "..."
+    },
+    {
+      "Origin": "SCORE_SENDED",
+      "Content": "スコアアップしました"
+    },
+    {
+      "Origin": "Random_MAJSETTING_TITLE",
+      "Content": "乱"
+    },
+    {
+      "Origin": "Random_MAJSETTING_DESC",
+      "Content": "ランダム"
+    },
+    {
+      "Origin": "RenderQuality_MAJSETTING_TITLE",
+      "Content": "レンダクオリティ"
+    },
+    {
+      "Origin": "RenderQuality_MAJSETTING_DESC",
+      "Content": "高くなったら質感が良くなる"
+    },
+    {
+      "Origin": "Topmost_MAJSETTING_TITLE",
+      "Content": "最前面に表示"
+    },
+    {
+      "Origin": "Topmost_MAJSETTING_DESC",
+      "Content": "ウィンドウを最前面に表示する"
+    },
+    {
+      "Origin": "FPSLimit_MAJSETTING_TITLE",
+      "Content": "FPS制限"
+    },
+    {
+      "Origin": "FPSLimit_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "VSync_MAJSETTING_TITLE",
+      "Content": "Vsync"
+    },
+    {
+      "Origin": "VSync_MAJSETTING_DESC",
+      "Content": ""
+    },
+    {
+      "Origin": "TopInfo_MAJSETTING_TITLE",
+      "Content": "フレーム表示"
+    },
+    {
+      "Origin": "TopInfo_MAJSETTING_DESC",
+      "Content": "1番と8番ボタンの真ん中のやつ"
+    },
+    {
+      "Origin": "TopInfo_MAJSETTING_OPTIONS_Judge",
+      "Content": "判定結果"
+    },
+    {
+      "Origin": "TopInfo_MAJSETTING_OPTIONS_Timing",
+      "Content": "Fast/Late"
+    },
+    {
+      "Origin": "TopInfo_MAJSETTING_OPTIONS_None",
+      "Content": "無効"
+    }
+  ]
+}
