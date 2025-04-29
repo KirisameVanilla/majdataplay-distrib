@@ -5,11 +5,24 @@ export default {
     let pathname = url.pathname;
 
     if ( pathname === "/" ) {
+      const html = `
+      <!DOCTYPE html>
+      <html lang="zh-CN">
+      <head>
+        <meta charset="UTF-8">
+        <title>Majdata 下载页</title>
+      </head>
+      <body>
+        <h1>Majdata 分发页</h1>
+        <p><a href="/MajdataPlayUpdater.Desktop.exe">点我下载最新版</a></p>
+        </body>
+      </html>
+      `;
       const headers = new Headers();
-      headers.set("Content-Type", "text/plain");
+      headers.set("Content-Type", "text/html; charset=UTF-8");
       headers.set("Cache-Control", "public, max-age=60");
       
-      return new Response( "Welcome! Append a file name to download.", {
+      return new Response( html, {
         status: 200,
         headers,
       });
