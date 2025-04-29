@@ -10,11 +10,11 @@ export default {
       <html lang="zh-CN">
       <head>
         <meta charset="UTF-8">
-        <title>Majdata 下载页</title>
+        <title>MajdataPlayUpdater 下载页</title>
       </head>
       <body>
         <h1>Majdata 分发页</h1>
-        <p><a href="/MajdataPlayUpdater.Desktop.exe">点我下载最新版</a></p>
+        <p><a href="/MajdataPlayUpdater.Desktop.exe">点我下载最新版更新器</a></p>
         </body>
       </html>
       `;
