@@ -1,4 +1,4 @@
 {
-    "VersionCode": 2,
-    "Changelog": "增加了设置页面和Api设置"
+    "VersionCode": 3,
+    "Changelog": "增加了对路径的检测;\n增加了exe图标."
 }
