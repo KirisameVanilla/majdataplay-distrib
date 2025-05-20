@@ -1,7 +1,9 @@
-from asyncio import Future
 import json
 from os import path
 import subprocess
+from threading import Lock
+import time
+from typing import Any
 import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import os
@@ -9,7 +11,7 @@ import os
 
 # 使用前先wrangler login, 然后设置下面的base_folder
 
-base_folder = r"C:\Users\Vanillaaaa\Downloads\MajdataPlay-Alpha4.7.34-Release"
+base_folder = r"D:\Programs\Tencent\QQ_Data\1147465926\FileRecv\MajdataPlay-0.1.0-rc1-Release\MajdataPlay-0.1.0-rc1-Release"
 
 
 def fetch_assets_info(op_type: str) -> list[dict]:
@@ -50,6 +52,21 @@ def upload_file(asset_info: dict, op_type: str) -> str:
     subprocess.run(command, check=True)
     return str(full_local_path)
 
+UPLOADS_PER_SECOND = 5
+last_upload_time = 0
+upload_lock = Lock()
+
+def rate_limited_submit(executor, func, *args):
+    global last_upload_time
+    with upload_lock:
+        now = time.time()
+        elapsed = now - last_upload_time
+        wait_time = max(0, 1.0 / UPLOADS_PER_SECOND - elapsed)
+        if wait_time > 0:
+            time.sleep(wait_time)
+        last_upload_time = time.time()
+        return executor.submit(func, *args)
+
 
 def main() -> None:
     op_code: str = input("请输入要上传的版本类型\n1: Nightly\n2: Stable\n")
@@ -62,9 +79,9 @@ def main() -> None:
 
     with ThreadPoolExecutor(max_workers=min(32, (os.cpu_count() or 1) * 5)) as executor:
         print(f"开了 {executor._max_workers} 个线程")
-        future_to_file: dict[Future[str], dict] = {}
+        future_to_file: dict[Any, dict] = {}
         for file in files:
-            future = executor.submit(upload_file, file, op_type)
+            future = rate_limited_submit(executor, upload_file, file, op_type)
             future_to_file[future] = file
 
         for future in as_completed(future_to_file):
