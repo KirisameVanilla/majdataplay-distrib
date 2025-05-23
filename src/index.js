@@ -136,14 +136,14 @@ export default {
       headers.set( "Content-Type", object.httpMetadata?.contentType || "application/octet-stream" );
       headers.set( "Content-Disposition", "attachment" );
 
-      if (pathname === "Nightly.json" || pathname === "Stable.json" || pathname === "MajdataPlayUpdater.Desktop.exe" || pathname === "MajdataPlayUpdaterVersion.json") {
+      if (pathname === "Nightly.json" || pathname === "Stable.json") {
         headers.set("Cache-Control", "no-store");
-      } else if (pathname.startsWith("Stable/") || pathname === "MajdataPlay-0.1.0-rc1-Release.7z") {
+      } else if (pathname.startsWith("Stable/")) {
         headers.set("Cache-Control", `public, max-age=${25 * 24 * 60 * 60}`); // stable: 25 days
       } else if (pathname.startsWith("Nightly/")) {
         headers.set("Cache-Control", `public, max-age=${3 * 60 * 60}`); // nightly: 3 hours
       } else {
-        headers.set("Cache-Control", `public, max-age=${1 * 60 * 60}`); // version: 1 hour
+        headers.set("Cache-Control", "no-store");
       }
 
       const response = new Response(object.body, { headers });
