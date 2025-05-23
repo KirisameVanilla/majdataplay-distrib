@@ -85,12 +85,12 @@ export default {
 <body>
   <div class="container">
     <h1>MajdataPlay更新器</h1>
-    <p><a class="button" href="/MajdataPlayUpdater.Desktop.exe">点我下载最新版更新器</a></p>
+    <p><a class="button" href="/Updater/MajdataPlayUpdater.Desktop.exe">点我下载最新版更新器</a></p>
 
     <div class="history-box">
       <h2>MajdataPlay历史版本</h2>
       <ul>
-        <li><a href="/MajdataPlay-0.1.0-rc1-Release.7z">0.1.0-rc1</a></li>
+        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc1-Release.7z">0.1.0-rc1</a></li>
       </ul>
     </div>
 
@@ -138,7 +138,9 @@ export default {
 
       if (pathname === "Nightly.json" || pathname === "Stable.json") {
         headers.set("Cache-Control", "no-store");
-      } else if (pathname.startsWith("Stable/")) {
+      } else if (pathname.startsWith("Updater/")) {
+        headers.set("Cache-Control", "no-store");
+      } else if (pathname.startsWith("Stable/") || pathname.startsWith("MajdataPlayHistoryPublish/")) {
         headers.set("Cache-Control", `public, max-age=${25 * 24 * 60 * 60}`); // stable: 25 days
       } else if (pathname.startsWith("Nightly/")) {
         headers.set("Cache-Control", `public, max-age=${3 * 60 * 60}`); // nightly: 3 hours
