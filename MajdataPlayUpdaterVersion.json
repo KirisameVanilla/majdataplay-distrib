@@ -1,4 +1,5 @@
 {
-    "VersionCode": 3,
-    "Changelog": "增加了对路径的检测;\n增加了exe图标."
+    "VersionCode": 4,
+    "Changelog": "增加了自更新",
+    "SHA256": "1dcae567a384b1e621da1a67549d7c5486f184e51038b10f97b16361ec397699"
 }
