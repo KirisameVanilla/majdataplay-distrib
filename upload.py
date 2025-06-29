@@ -11,7 +11,7 @@ import os
 
 # 使用前先wrangler login, 然后设置下面的base_folder
 
-base_folder = r"D:\Programs\Tencent\QQ_Data\1147465926\FileRecv\MajdataPlay-0.1.0-rc1-Release\MajdataPlay-0.1.0-rc1-Release"
+base_folder = r"C:\Users\KirisameVanilla\Documents\MajdataPlay-0.1.0-rc4-Release"
 
 
 def fetch_assets_info(op_type: str) -> list[dict]:
@@ -36,11 +36,11 @@ def check_update(op_type: str) -> list[dict]:
 
 
 def upload_file(asset_info: dict, op_type: str) -> str:
-    r2_destination = f"majdataplay-distrib/{op_type}/{asset_info['RelativePath']}"
-    print(base_folder)
-    full_local_path = base_folder + asset_info["RelativePath"]
+    relative_path = asset_info["RelativePath"].lstrip("/\\")
+    r2_destination = f"majdataplay-distrib/{op_type}/{relative_path}"
+    full_local_path = path.normpath(path.join(base_folder, relative_path))
     command = [
-        r"C:\Users\Vanillaaaa\AppData\Roaming\npm\wrangler.cmd",
+        r"C:\Users\KirisameVanilla\AppData\Local\npm-cache\_npx\32026684e21afda6\node_modules\.bin\wrangler.cmd",
         "r2",
         "object",
         "put",
@@ -49,6 +49,7 @@ def upload_file(asset_info: dict, op_type: str) -> str:
         full_local_path,
         "--remote",
     ]
+    print(command)
     subprocess.run(command, check=True)
     return str(full_local_path)
 
@@ -74,6 +75,7 @@ def main() -> None:
     print("您选择了" + op_type)
     files: list[dict] = check_update(op_type)
     files_count: int = len(files)
+    print("待更新: ", files_count)
     failed_files: list[str] = []
     success_count = 0
 
