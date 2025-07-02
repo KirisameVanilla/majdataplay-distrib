@@ -10,7 +10,7 @@ export default {
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>Majdata工作2000</title>
+  <title>MajdataPlay</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -91,6 +91,11 @@ export default {
       <h2>MajdataPlay历史版本</h2>
       <ul>
         <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc1-Release.7z">0.1.0-rc1</a></li>
+        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc2-Release.7z">0.1.0-rc2</a></li>
+        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc3-Release.7z">0.1.0-rc3</a></li>
+        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc4-Release.7z">0.1.0-rc4</a></li>
+        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc5-Release.7z">0.1.0-rc5</a></li>
+        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc6-Release.7z">0.1.0-rc6</a></li>
       </ul>
     </div>
 

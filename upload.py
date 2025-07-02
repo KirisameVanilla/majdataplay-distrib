@@ -11,7 +11,7 @@ import os
 
 # 使用前先wrangler login, 然后设置下面的base_folder
 
-base_folder = r"C:\Users\KirisameVanilla\Documents\MajdataPlay-0.1.0-rc4-Release"
+base_folder = r"E:\KirisameVanilla\Documents\Tencent Files\1147465926\FileRecv\MajdataPlay-0.1.0-rc6-Release\MajdataPlay-0.1.0-rc6-Release"
 
 
 def fetch_assets_info(op_type: str) -> list[dict]:
