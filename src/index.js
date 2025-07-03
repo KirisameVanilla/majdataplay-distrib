@@ -96,6 +96,7 @@ export default {
         <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc4-Release.7z">0.1.0-rc4</a></li>
         <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc5-Release.7z">0.1.0-rc5</a></li>
         <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc6-Release.7z">0.1.0-rc6</a></li>
+        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc7-Release.7z">0.1.0-rc7</a></li>
       </ul>
     </div>
 
