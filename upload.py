@@ -11,7 +11,7 @@ import os
 
 # 使用前先wrangler login, 然后设置下面的base_folder
 
-base_folder = r"E:\KirisameVanilla\Documents\Tencent Files\1147465926\FileRecv\MajdataPlay-0.1.0-rc7-Release"
+base_folder = r"C:\Users\Vanillaaaa\Downloads\MajdataPlay-0.1.0-rc9-Release"
 
 
 def fetch_assets_info(op_type: str) -> list[dict]:
@@ -40,7 +40,7 @@ def upload_file(asset_info: dict, op_type: str) -> str:
     r2_destination = f"majdataplay-distrib/{op_type}/{relative_path}"
     full_local_path = path.normpath(path.join(base_folder, relative_path))
     command = [
-        r"C:\Users\KirisameVanilla\AppData\Local\npm-cache\_npx\32026684e21afda6\node_modules\.bin\wrangler.cmd",
+        r"C:\Users\Vanillaaaa\AppData\Roaming\npm\wrangler.cmd",
         "r2",
         "object",
         "put",
