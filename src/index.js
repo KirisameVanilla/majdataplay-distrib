@@ -249,6 +249,8 @@ export default {
         headers.set("Cache-Control", "no-store");
       } else if (pathname.startsWith("Stable/") || pathname.startsWith("MajdataPlayHistoryPublish/")) {
         headers.set("Cache-Control", `public, max-age=${25 * 24 * 60 * 60}`); // stable: 25 days
+      } else if (pathname === "arcaea.apk") {
+        headers.set("Cache-Control", `public, max-age=${1 * 24 * 60 * 60}`); // stable: 1 days
       } else if (pathname.startsWith("Nightly/")) {
         headers.set("Cache-Control", `public, max-age=${3 * 60 * 60}`); // nightly: 3 hours
       } else {
