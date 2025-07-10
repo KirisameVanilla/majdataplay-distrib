@@ -87,20 +87,20 @@ export default {
     <h1>MajdataPlay更新器</h1>
     <p><a class="button" href="/Updater/MajdataPlayUpdater.Desktop.exe">点我下载最新版更新器</a></p>
 
-    <div class="history-box">
-      <h2>MajdataPlay历史版本</h2>
+    <details class="history-box">
+      <summary><h2>MajdataPlay历史版本</h2></summary>
       <ul>
-        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc1-Release.7z">0.1.0-rc1</a></li>
-        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc2-Release.7z">0.1.0-rc2</a></li>
-        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc3-Release.7z">0.1.0-rc3</a></li>
-        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc4-Release.7z">0.1.0-rc4</a></li>
-        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc5-Release.7z">0.1.0-rc5</a></li>
-        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc6-Release.7z">0.1.0-rc6</a></li>
-        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc7-Release.7z">0.1.0-rc7</a></li>
-        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc8-Release.7z">0.1.0-rc8</a></li>
         <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc9-Release.7z">0.1.0-rc9</a></li>
+        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc8-Release.7z">0.1.0-rc8</a></li>
+        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc7-Release.7z">0.1.0-rc7</a></li>
+        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc6-Release.7z">0.1.0-rc6</a></li>
+        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc5-Release.7z">0.1.0-rc5</a></li>
+        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc4-Release.7z">0.1.0-rc4</a></li>
+        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc3-Release.7z">0.1.0-rc3</a></li>
+        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc2-Release.7z">0.1.0-rc2</a></li>
+        <li><a href="/MajdataPlayHistoryPublish/MajdataPlay-0.1.0-rc1-Release.7z">0.1.0-rc1</a></li>
       </ul>
-    </div>
+    </details>
 
     <div class="footer">由 Cloudflare Worker 提供加速</div>
   </div>
@@ -162,33 +162,6 @@ export default {
     }
     a.button:hover {
       background-color: #005ea6;
-    }
-    .history-box {
-      margin-top: 2rem;
-      padding: 1rem;
-      background-color: #f7f9fa;
-      border: 1px solid #d1d5da;
-      border-radius: 12px;
-      text-align: left;
-    }
-    .history-box h2 {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-      color: #333;
-    }
-    .history-box ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    .history-box li {
-      margin: 0.5rem 0;
-    }
-    .history-box a {
-      color: #0078D4;
-      text-decoration: none;
-    }
-    .history-box a:hover {
-      text-decoration: underline;
     }
     .footer {
       margin-top: 2rem;
